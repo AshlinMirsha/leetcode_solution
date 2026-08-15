@@ -1,0 +1,13 @@
+# Last updated: 8/15/2026, 3:05:37 PM
+class Solution:
+    def dailyTemperatures(self, temperatures):
+        answer=[0]*len(temperatures)
+        stack = []
+        for i in range (len(temperatures)):
+            while stack and temperatures[i] > temperatures[stack[-1]]:
+                previous_index = stack.pop()
+                answer[previous_index]=i-previous_index
+            stack.append(i)
+        return answer
+
+        
