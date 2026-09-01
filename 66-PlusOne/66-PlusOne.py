@@ -1,13 +1,10 @@
-# Last updated: 8/15/2026, 3:05:53 PM
+# Last updated: 9/1/2026, 10:23:13 PM
 class Solution:
-    def plusOne(self, digits):
+    def plusOne(self,digit):
+        for i in range (len(digit) -1 , -1, -1):
+            if digit[i]<9:
+                digit[i]+=1
+                return digit
+            digit[i]=0
+        return[1]+digit
 
-        for i in range(len(digits) - 1, -1, -1):
-
-            if digits[i] < 9:
-                digits[i] += 1
-                return digits
-
-            digits[i] = 0
-
-        return [1] + digits
