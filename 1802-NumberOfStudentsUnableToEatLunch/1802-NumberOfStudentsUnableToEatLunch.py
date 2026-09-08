@@ -1,4 +1,4 @@
-# Last updated: 8/15/2026, 3:05:27 PM
+# Last updated: 9/8/2026, 5:47:18 PM
 class Solution:
     def countStudents(self,students,sandwitches):
         count=[0,0]
