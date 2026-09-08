@@ -1,4 +1,4 @@
-# Last updated: 9/2/2026, 6:11:02 PM
+# Last updated: 9/8/2026, 5:49:07 PM
 class Solution:
     def timeRequiredToBuy(self, tickets, k):
         time = 0
